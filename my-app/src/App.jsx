@@ -1,8 +1,8 @@
-import List from './List';
+import ProfilePic from './ProfilePic';
 function App() {
   return(
     <>
-    <List />
+    <ProfilePic />
     </>
   );
 }
