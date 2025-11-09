@@ -1,9 +1,10 @@
-import Counter from "./State/Counter";
+import MyComponent from "./MyComponent";
 function App() {
   return(
     <>
     {/* <ColorPicker /> */}
-    <Counter/>
+    {/* <Counter/> */}
+    <MyComponent/>
     </>
   );
 }
