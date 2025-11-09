@@ -1,11 +1,12 @@
-import MyComponentArr from "./MyComponentArr";
+import MyComponentArrOb from "./MyComponentArrOb";
 function App() {
   return(
     <>
     {/* <ColorPicker /> */}
     {/* <Counter/> */}
     {/* <MyComponent/> */}
-    <MyComponentArr/>
+    {/* <MyComponentArr/> */}
+    <MyComponentArrOb />
     </>
   );
 }
