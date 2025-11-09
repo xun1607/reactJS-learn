@@ -1,0 +1,85 @@
+$primary: #7c3aed;
+$primary-dark: #5b21b6;
+$bg-item: #fbfbfd;
+$bg-btn-hover: #eef2ff;
+
+.body {
+    background-color: rgb(40, 37, 37);
+}
+
+.to-do-list {
+    background-color: rgb(40, 37, 37);
+    box-sizing: border-box;
+    width: min(640px, 95%);
+    margin: 36px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(25, 25, 50, 0.08);
+    font-family: Inter, system-ui, sans-serif;
+
+    h1 {
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    >div {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+
+            &:focus {
+                border-color: $primary;
+                box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.08);
+            }
+        }
+
+        .add-btn {
+            background: linear-gradient(180deg, $primary, $primary-dark);
+            color: #fff;
+            border-radius: 8px;
+
+            &:hover {
+                transform: translateY(-1px);
+            }
+        }
+    }
+
+    ol {
+        padding-left: 20px;
+
+        li {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            background: $bg-item;
+
+            .text {
+                flex: 1;
+            }
+
+            .delete-btn,
+            .up-btn,
+            .down-btn {
+                padding: 6px 10px;
+                border-radius: 8px;
+                background: #f3f4f6;
+
+                &:hover {
+                    background: $bg-btn-hover;
+                }
+            }
+        }
+    }
+}

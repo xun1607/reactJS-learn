@@ -1,12 +1,8 @@
-import MyComponentArrOb from "./MyComponentArrOb";
+import ToDoList from "./ToDoList";
 function App() {
   return(
     <>
-    {/* <ColorPicker /> */}
-    {/* <Counter/> */}
-    {/* <MyComponent/> */}
-    {/* <MyComponentArr/> */}
-    <MyComponentArrOb />
+    <ToDoList />
     </>
   );
 }

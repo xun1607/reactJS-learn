@@ -83,3 +83,135 @@ input[type="color"]{
   border-radius: 10px;
   border: 3px solid hsl(0,0,80%);
 }
+
+
+
+/* Container chính */
+.to-do-list {
+  box-sizing: border-box;
+  width: min(640px, 95%);
+  margin: 36px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(25, 25, 50, 0.08);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Tiêu đề */
+.to-do-list h1 {
+  margin: 0 0 16px 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.2px;
+  color: #111827;
+  text-align: center;
+}
+
+/* Hàng input + button */
+.to-do-list > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* Input */
+.to-do-list input[type="text"] {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  transition: box-shadow .12s, border-color .12s;
+}
+.to-do-list input[type="text"]:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 4px rgba(124,58,237,0.08);
+}
+
+/* Buttons chung */
+.to-do-list button {
+  padding: 9px 12px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .08s;
+}
+
+/* Add button */
+.to-do-list .add-btn {
+  background: linear-gradient(180deg,#7c3aed,#5b21b6);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(92,33,204,0.12);
+}
+.to-do-list .add-btn:hover { transform: translateY(-1px); }
+
+/* Danh sách */
+.to-do-list ol {
+  margin: 0;
+  padding-left: 20px;
+  list-style: decimal;
+}
+
+/* Item */
+.to-do-list li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #fbfbfd;
+  border: 1px solid #f1f5f9;
+}
+
+/* Text task */
+.to-do-list .text {
+  flex: 1 1 0;
+  min-width: 0;
+  margin-right: 12px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  word-break: break-word;
+}
+
+/* Nhóm nút bên phải */
+.to-do-list .delete-btn,
+.to-do-list .up-btn,
+.to-do-list .down-btn {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  background: #f3f4f6;
+  color: #111827;
+  border: 1px solid transparent;
+}
+.to-do-list .delete-btn:hover { background: #fee2e2; border-color: #fca5a5; }
+.to-do-list .up-btn:hover,
+.to-do-list .down-btn:hover { background: #eef2ff; border-color: #c7d2fe; }
+
+/* Khi nút bị vô hiệu (ví dụ item đầu/ cuối) */
+.to-do-list button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive nhỏ */
+@media (max-width: 420px) {
+  .to-do-list {
+    padding: 14px;
+  }
+  .to-do-list h1 { font-size: 1.3rem; }
+  .to-do-list .delete-btn,
+  .to-do-list .up-btn,
+  .to-do-list .down-btn {
+    padding: 6px;
+    font-size: 0.75rem;
+  }
+}
