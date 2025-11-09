@@ -1,9 +1,9 @@
-import ColorPicker from "./ColorPicker";
+import Counter from "./State/Counter";
 function App() {
   return(
     <>
-    <ColorPicker />
-    {/* <Counter/> */}
+    {/* <ColorPicker /> */}
+    <Counter/>
     </>
   );
 }
