@@ -3,12 +3,8 @@ $primary-dark: #5b21b6;
 $bg-item: #fbfbfd;
 $bg-btn-hover: #eef2ff;
 
-.body {
-    background-color: rgb(40, 37, 37);
-}
-
 .to-do-list {
-    background-color: rgb(40, 37, 37);
+
     box-sizing: border-box;
     width: min(640px, 95%);
     margin: 36px auto;
@@ -81,5 +77,35 @@ $bg-btn-hover: #eef2ff;
                 }
             }
         }
+    }
+}
+
+// clock app 
+
+body {
+    background-image: url(assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: end;
+}
+
+.clock-container {
+    backdrop-filter: blur(1px);
+    width: 100vw;
+    padding: 10px 0;
+
+    .clock {
+        color: rgb(169, 40, 96);
+        font-size: 6rem;
+        font-weight: bold;
+        font-family: monospace;
+        text-align: center;
+        text-shadow: 3px 3px 5px hsla(0, 33%, 2%, 0.75);
     }
 }
